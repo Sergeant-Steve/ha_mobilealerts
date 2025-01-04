@@ -194,6 +194,7 @@ class MobileAlertesIsRainingBinarySensor(MobileAlertesBinarySensor):
         return time_span_sensor is not None and time_span_sensor.available
 
     
+
 def create_gateway_binary_sensor_entities(
     gateway: Gateway,
 ) -> list[MobileAlertesGatewayBinarySensor]:
