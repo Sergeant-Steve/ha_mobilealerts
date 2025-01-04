@@ -178,7 +178,7 @@ class MobileAlertesIsRainingBinarySensor(MobileAlertesBinarySensor):
                     time.ctime(time_span_sensor.last_update),
                 )
                 value = (
-                    (int(time_span_sensor._attr_native_value) == 0) and
+                    (int(float(time_span_sensor._attr_native_value)) == 0) and
                     (
                         time_span_sensor.last_update >= 
                         time.time() - LAST_RAIN_PERIOD
